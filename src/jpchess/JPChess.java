@@ -9,7 +9,7 @@ public class JPChess {
 
     
     public static void main(String[] args) {
-        JFrame frame = new JFrame("A Chess Game");
+        JFrame frame = new JFrame("JP Chess");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         
