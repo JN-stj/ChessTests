@@ -53,6 +53,8 @@ git clone https://github.com/JN-stj/JPChess.git
 2. Ouvre le projet dans IntelliJ IDEA (ou l'IDE de ton choix)
 3. Lance la classe `JPChess.java` (contient la méthode `main`)
 
+![Aperçu du jeu JPChess](screenshots/apercu.png)
+
 
 
 ## Fonctionnalités
