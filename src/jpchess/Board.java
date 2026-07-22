@@ -14,7 +14,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import static jpchess.Type.TOUR;
 
-
+//Logique métier des états, de gameplay loop, de règles d'échecs et autres
 public class Board extends JPanel implements Runnable {
     
     public static final int WIDTH = 1100;
@@ -562,7 +562,7 @@ public class Board extends JPanel implements Runnable {
            if(checkingP != null && checkingP.color == BLACK) {
                g2.setColor(Color.red);
                g2.drawString("Le Roi", 840, 650);
-               g2.drawString("est en �chec!", 840, 700);
+               g2.drawString("est en �chec!", 840, 700);
            }
        }
        else {
@@ -570,7 +570,7 @@ public class Board extends JPanel implements Runnable {
            if(checkingP != null && checkingP.color == WHITE) {
                g2.setColor(Color.red);
                g2.drawString("Le Roi", 840, 100);
-               g2.drawString("est en �chec!", 840, 150);
+               g2.drawString("est en �chec!", 840, 150);
        }
        }
        

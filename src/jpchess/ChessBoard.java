@@ -4,7 +4,7 @@ package jpchess;
 import java.awt.Color;
 import java.awt.Graphics2D;
 
-
+//Classe qui s'occupe de dessiner le board
 public class ChessBoard {
     
     final int MAX_COL = 8;
