@@ -4,7 +4,7 @@ package jpchess;
 import javax.swing.*;
 
 
-
+//Classe principale pour démarrer le jeu
 public class JPChess {
 
     
