@@ -1,32 +1,75 @@
-========================
-BUILD OUTPUT DESCRIPTION
-========================
+## JPChess 
 
-When you build an Java application project that has a main class, the IDE
-automatically copies all of the JAR
-files on the projects classpath to your projects dist/lib folder. The IDE
-also adds each of the JAR files to the Class-Path element in the application
-JAR files manifest file (MANIFEST.MF).
+Un jeu d'échecs en Java avec interface graphique, développé pour approfondir mes compétences en programmation orientée objet et en conception de logiciels.
 
-To run the project from the command line, go to the dist folder and
-type the following:
 
-java -jar "JPChess.jar" 
 
-To distribute this project, zip up the dist folder (including the lib folder)
-and distribute the ZIP file.
+## Description
 
-Notes:
 
-* If two JAR files on the project classpath have the same name, only the first
-JAR file is copied to the lib folder.
-* Only JAR files are copied to the lib folder.
-If the classpath contains other types of files or folders, these files (folders)
-are not copied.
-* If a library on the projects classpath also has a Class-Path element
-specified in the manifest,the content of the Class-Path element has to be on
-the projects runtime path.
-* To set a main class in a standard Java project, right-click the project node
-in the Projects window and choose Properties. Then click Run and enter the
-class name in the Main Class field. Alternatively, you can manually type the
-class name in the manifest Main-Class element.
+JPChess est une implémentation complète du jeu d'échecs, incluant :
+- Un plateau de jeu interactif avec interface graphique (Swing)
+- La gestion de tous les types de pièces (Roi, Reine, Tour, Fou, Cavalier, Pion) avec leurs règles de déplacement spécifiques
+- La détection des mouvements via la souris
+- Une architecture orientée objet claire, séparant la logique du jeu (modèle) et l'affichage (vue).
+
+Technologies utilisées dans le cadre du projet :
+
+- **Java**
+- **Swing** — interface graphique
+- Architecture orientée objet (héritage, polymorphisme)
+
+
+
+## Structure du projet
+
+```
+JPChess/
+├── src/
+│   ├── jpchess/
+│   │   ├── JPChess.java       # Point d'entrée du programme
+│   │   ├── Board.java         # Gestion du plateau
+│   │   ├── ChessBoard.java    # Logique de l'échiquier
+│   │   ├── Mouse.java         # Gestion des interactions souris
+│   │   └── Type.java          # Types/énumérations du jeu
+│   ├── Piece/
+│   │   ├── Piece.java         # Classe abstraite des pièces
+│   │   ├── Roi.java
+│   │   ├── Reine.java
+│   │   ├── Tour.java
+│   │   ├── Fou.java
+│   │   ├── Cavalier.java
+│   │   └── Pion.java
+│   └── res/                   # Images des pièces
+```
+
+
+## Comment lancer le projet
+
+1. Clone le repository :
+```bash
+git clone https://github.com/JN-stj/JPChess.git
+```
+2. Ouvre le projet dans IntelliJ IDEA (ou l'IDE de ton choix)
+3. Lance la classe `JPChess.java` (contient la méthode `main`)
+
+
+
+## Fonctionnalités
+
+- [x] Affichage du plateau et des pièces
+- [x] Déplacement des pièces à la souris
+- [X] Validation complète des règles d'échecs (échec, échec et mat)
+- [ ] Historique des coups
+- [ ] Mode deux joueurs en ligne
+
+
+
+## Auteur
+
+**JN-stj**
+[GitHub](https://github.com/JN-stj)
+
+---
+
+*Projet réalisé dans le cadre de mon apprentissage en programmation Java / génie logiciel.*
